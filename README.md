@@ -13,16 +13,16 @@ Think of data structures as different ways to organize and store your data (like
     * **C++ Example:**
         ```cpp
         #include <iostream>
-        #include <vector> // for std::vector (dynamic array, recommended)
-        #include <array>  // for std::array (fixed-size, safer than C-style)
+        #include <vector> //for std::vector (dynamic array, recommended)
+        #include <array>  //for std::array (fixed-size, safer than C-style)
 
         int main() {
-            // C-style array (size must be known at compile time)
+            // c-style array (size must be known at compile time)
             int scores[3];
             scores[0] = 90;
             scores[1] = 85;
             scores[2] = 92;
-            std::cout << "Second score (index 1): " << scores[1] << std::endl; // output: 85
+            std::cout << "Second score (index 1): " << scores[1] << std::endl; // 85
 
             // std::array (fixed size, more features, bounds checking with .at())
             std::array<int, 3> ages = {25, 30, 22};
